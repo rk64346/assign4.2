@@ -1,0 +1,266 @@
+{
+ "cells": [
+  {
+   "cell_type": "raw",
+   "id": "a64b1eaf-f4cf-447f-a94c-8f425152aa1c",
+   "metadata": {},
+   "source": [
+    "Q1- explain class and object with respect to object - oriented programimming.give suitable example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "a306dc90-6f4a-4fa8-a0fd-ca6d1feda3bc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class Prokariyotic:\n",
+    "    def __init__(self,name,odour,species):\n",
+    "        self.name = name\n",
+    "        self.odour = odour\n",
+    "        self.species = species\n",
+    "    def display_species(self):\n",
+    "        print(\"this spcies is belong to prokariyotic type\")\n",
+    "        \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "50f1c612-a3a4-4f96-aa19-9291134665bb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "cell_classification =  Prokariyotic(\"virus\",\"pungent\",\"rino-virus\")# here i have created object"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "7a23fc3c-3329-4e19-83a4-c60fbc14b98a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "this spcies is belong to prokariyotic type\n"
+     ]
+    }
+   ],
+   "source": [
+    "cell_classification.display_species()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "7f0821f2-ff45-49bb-a088-9faa512fd374",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "virus\n",
+      "pungent\n",
+      "rino-virus\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(cell_classification.name)\n",
+    "print(cell_classification.odour)\n",
+    "print(cell_classification.species)"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "77963a23-5ceb-40f5-8686-187663334749",
+   "metadata": {},
+   "source": [
+    "Q2- name the four pillar of oops."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "958447c8-0813-46c3-ade3-690d99d553e1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'#These four pillars of OOP—encapsulation, inheritance, polymorphism, and abstraction—provide principles and techniques for organizing code, promoting reusability, and creating more manageable and flexible software systems.'"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "\"\"\"#These four pillars of OOP—encapsulation, inheritance, polymorphism, and abstraction—provide principles and techniques for organizing code, promoting reusability, and creating more manageable and flexible software systems.\"\"\""
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "fd7c474c-1e06-4f2a-968d-5cb369b2f7eb",
+   "metadata": {},
+   "source": [
+    "Q3- explain why the __init__() function is used.give a suitable exaple"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "971f74d1-4278-4853-9b2b-5ef6d7c7406a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "this spcies is belong to prokariyotic type\n"
+     ]
+    }
+   ],
+   "source": [
+    "#when an object is created from that class. It is known as the constructor method. The primary purpose of the __init__ method is to initialize the attributes (or properties) of an object with values provided during object creation.\n",
+    "class Prokariyotic:\n",
+    "    def __init__(self,name,odour,species):\n",
+    "        self.name = name\n",
+    "        self.odour = odour\n",
+    "        self.species = species\n",
+    "    def display_species(self):\n",
+    "        print(\"this spcies is belong to prokariyotic type\")\n",
+    "cell_classification =  Prokariyotic(\"virus\",\"pungent\",\"rino-virus\")\n",
+    "cell_classification.display_species()\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "43bf4191-68c7-47cd-a5b0-55b3836bf7d0",
+   "metadata": {},
+   "source": [
+    "Q4- WHY SELF IS USED IN OOPS?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "052883f4-7d56-4e08-955b-453697e6be38",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "\"n Python, the self parameter is used to refer to the instance of a class within its own methods. It acts as a reference to the current object being operated upon. The use of self allows access to the object's attributes and methods from within its own scope.\""
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "\"\"\"n Python, the self parameter is used to refer to the instance of a class within its own methods. It acts as a reference to the current object being operated upon. The use of self allows access to the object's attributes and methods from within its own scope.\"\"\""
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "b0208f13-8ffa-49f2-851a-bf22d786777e",
+   "metadata": {},
+   "source": [
+    "Q5- what is inheritance? give an example for each type of inheritance."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "bb5c1072-90ec-4cc9-b9be-56ee6a60a0ec",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "this a classification of cell\n",
+      "says i am bacteria\n",
+      "i am virus\n"
+     ]
+    }
+   ],
+   "source": [
+    "## example first\n",
+    "class eukariyotic:\n",
+    "    def __init__(self,name):\n",
+    "        self.name = name\n",
+    "    def organism(self):\n",
+    "        print(\"this a classification of cell\")\n",
+    "        \n",
+    "class Bacteria(eukariyotic):\n",
+    "    def __init__(self,name):\n",
+    "            super().__init__(name)\n",
+    "        \n",
+    "            self.name = name\n",
+    "    def organism(self):\n",
+    "        \n",
+    "        print(\"says i am bacteria\")\n",
+    "        \n",
+    "class virus(eukariyotic):\n",
+    "    def __init__(self,name):\n",
+    "        \n",
+    "            super().__init__(name)\n",
+    "            self.name = name\n",
+    "    def organism(self):\n",
+    "        print(\"i am virus\")\n",
+    "        \n",
+    "eukariyote = eukariyotic(\"Eukaryote\")\n",
+    "eukariyote.organism()\n",
+    "bacteria = Bacteria(\"Bacterium\")\n",
+    "bacteria.organism()\n",
+    "virus = virus(\"viroid\")\n",
+    "virus.organism()\n",
+    "\n",
+    "            \n",
+    "            \n",
+    "        \n",
+    "        \n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fa2c4708-9b3b-48bf-bf10-87c98b1aa69c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
